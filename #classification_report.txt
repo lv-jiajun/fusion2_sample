@@ -1,0 +1,9 @@
+                precision    recall  f1-score   support
+
+CWE-119  False     0.5585    0.5607    0.5596      4027
+ CWE-119  True     0.5415    0.5392    0.5404      3874
+
+     micro avg     0.5502    0.5502    0.5502      7901
+     macro avg     0.5500    0.5500    0.5500      7901
+  weighted avg     0.5501    0.5502    0.5502      7901
+   samples avg     0.5502    0.5502    0.5502      7901
