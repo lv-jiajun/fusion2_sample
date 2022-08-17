@@ -9,7 +9,8 @@
 
 训练模型：TextCNN,GCN
 
-开源的源码分析工具Joern（https://joern.readthedocs.io/en/latest/）对函数级的C/C++源代码进行分析，来提取属性控制流图。
+开源的源码分析工具Joern（https://joern.readthedocs.io/en/latest/）
+对函数级的C/C++源代码进行分析，来提取属性控制流图。
 
 采用的图框架：DGL
 
