@@ -1,33 +1,3 @@
-{
-  char *p = getenv("LINEDIT");
-  if (p == NULL)
-    return;
-  if (strstr(p, "gui=no") != NULL)
-    use_gui = 0;
-  if (strstr(p, "ansi=no") != NULL)
-    use_ansi = 0;
-  if ((p = strstr(p, "out=")) != NULL)
-    {
-      p += 4;
-      if (isdigit(*p))
-	fd_out = strtol(p, NULL, 10);
-      else
-	{
-	  char buff[1024];
-	  char *q = buff;
-	  while(*p && isprint(*p) && !isspace(*p))
-	    *q++ = *p++;
-	  *q = '\0';
-	  fd_out = open(buff, O_WRONLY); /* on error fd_out = -1 */
-	}
-    }
-}
-CWE-119  True
-CWE-120  True
-CWE-469  False
-CWE-476  False
-CWE-other  False
---------------------------
 img_filename(const char *mapimgfile, enum imageformat format,
                          char *filename, size_t filename_len)
 {
