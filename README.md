@@ -28,7 +28,7 @@ gnnmodels文件夹中在gnnmodel文件夹中增加了sumModel.py文件，通过�
 
 testinputs文件夹存放的是原始数据集经过joern工具转换的属性控制流程图。
 
-CFGDataset.py文件中使用dgl框架，将testinputs文件夹中的属性控制流程图经过数据处理，作为GCN模型的输入。
+CFGDataset.py文件中使用DGL框架，将testinputs文件夹中的属性控制流程图经过数据处理，作为GCN模型的输入。
 
 ParameterConfig.py文件中是参数的设置。
 
