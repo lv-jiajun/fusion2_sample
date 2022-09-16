@@ -21,15 +21,25 @@
 
 详细介绍：
 gnnmodel文件夹中不仅有GCN和TextCNN模型，还有诸如Transfomer, TextCNN, TextRCNN等模型。
+
 gnnmodels文件夹中在gnnmodel文件夹中增加了sumModel.py文件，通过该文件来实现特征向量的有机融合。
+
 testinputs文件夹存放的是原始数据集经过joern工具转换的属性控制流程图。
+
 CFGDataset.py文件中使用dgl框架，将testinputs文件夹中的属性控制流程图经过数据处理，作为GCN模型的输入。
+
 ParameterConfig.py文件中是参数的设置。
+
 train_eval.py文件是对模型进行训练和测试，并通过性能指标来评估模型对代码漏洞检测的能力。
+
 sample.txt文件中存放的是少部分的原始数据集，作为一个样本。
+
 clean_gadget.py文件在原始数据集中删除注释，对函数进行标准化。
+
 vectorize_gadget.py文件是将函数转化为token序列。
+
 TextCp.py文件是将token序列进行数据处理，作为TextCNN模型的输入。
+
 ins2vec.py采用的词嵌入方式是Word2Vec。(也试过fasText词嵌入方式，效果比Word2Vec差一点)。
 
 下载之后，如遇到问题，欢迎询问！
