@@ -19,7 +19,8 @@
 下载项目后：运行family.py文件即可。
 
 
-##详细介绍
+## 详细介绍
+
 
 gnnmodel文件夹中不仅有GCN和TextCNN模型，还有诸如Transfomer, TextCNN, TextRCNN等模型。
 
