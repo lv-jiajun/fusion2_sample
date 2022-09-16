@@ -5,7 +5,7 @@
 然后，分别利用针对序列的神经网络TextCNN和图卷积神经网络，从中抽取深层次的代码语义特征；
 最后，考虑到token序列和ACFG是从不同角度对同一函数的语义进行的互补性描述，因此通过直观的向量拼接操作，将从二者中抽取的特征向量进行有机融合，并送入分类层，实现函数级漏洞的检测。
 
-词嵌入方式：Word2vec
+词嵌入方式：Word2Vec
 
 训练模型：TextCNN,GCN
 
@@ -42,7 +42,7 @@ vectorize_gadget.py文件是将函数转化为token序列。
 
 TextCp.py文件是将token序列进行数据处理，作为TextCNN模型的输入。
 
-ins2vec.py采用的词嵌入方式是Word2Vec。(也试过fasText词嵌入方式，效果比Word2Vec差一点)。
+ins2vec.py采用的词嵌入方式是Word2Vec。(也试过FasText词嵌入方式，效果比Word2Vec差一点)。
 
 下载之后，如遇到问题，欢迎询问！
 qq:1135685255
