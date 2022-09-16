@@ -11,7 +11,6 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.utils.data as Data
 import torch.utils.data.dataset as Dataset
-from model1_trun import model1_trun
 from gnnmodels.sumModel import sumModel
 from vuldeepecker import Part1
 
