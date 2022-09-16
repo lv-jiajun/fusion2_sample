@@ -33,14 +33,13 @@ class sumModel(nn.Module):
         self.model1 = x.Model(self.config).to(device)
         self.model2 = OptimizedGCNClassifier(ParameterConfig.GCN_HIDDEN_DIM, ParameterConfig.GCN_HIDDEN_DIM,
                                     self.n_classes, db.embeddings_matrix, node_vec_stg=node_vec_stg).to(device)
-       # self.fc = nn.Linear(896, 2)
-        self.fc = nn.Linear(192, 2)
+        self.fc = nn.Linear(384, 2)
+       # self.fc = nn.Linear(192, 2)
     def forward(self, x1, x2):
         out1 =self.model1(x1)
         out2 =self.model2(x2)
-    #   inputs = [out1, out2]
-    #    out = torch.cat(inputs,dim=1)
-        out = torch.add(out1,out2)
+        inputs = [out1, out2]
+        out = torch.cat(inputs,dim=1)
         out = self.fc(out)
         return out
 
